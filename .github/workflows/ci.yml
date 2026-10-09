@@ -11,7 +11,7 @@ concurrency:
 jobs:
   whitespace-errors:
     name: Check for whitespace errors
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
@@ -25,20 +25,20 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { cc: gcc-16, runs-on: ubuntu-latest }
-          - { cc: gcc-15, runs-on: ubuntu-latest }
-          - { cc: gcc-14, runs-on: ubuntu-latest }
-          - { cc: gcc-13, runs-on: ubuntu-latest }
-          - { cc: gcc-12, runs-on: ubuntu-latest }
-          - { cc: gcc-11, runs-on: ubuntu-latest }
+          - { cc: gcc-16, runs-on: ubuntu-26.04 }
+          - { cc: gcc-15, runs-on: ubuntu-26.04 }
+          - { cc: gcc-14, runs-on: ubuntu-26.04 }
+          - { cc: gcc-13, runs-on: ubuntu-26.04 }
+          - { cc: gcc-12, runs-on: ubuntu-26.04 }
+          - { cc: gcc-11, runs-on: ubuntu-26.04 }
           - { cc: gcc-10, runs-on: ubuntu-24.04 }
           - { cc: gcc-9, runs-on: ubuntu-24.04 }
           - { cc: clang-22, runs-on: ubuntu-26.04 }
           - { cc: clang-21, runs-on: ubuntu-26.04 }
-          - { cc: clang-20, runs-on: ubuntu-latest }
-          - { cc: clang-19, runs-on: ubuntu-latest }
-          - { cc: clang-18, runs-on: ubuntu-latest }
-          - { cc: clang-17, runs-on: ubuntu-latest }
+          - { cc: clang-20, runs-on: ubuntu-26.04 }
+          - { cc: clang-19, runs-on: ubuntu-26.04 }
+          - { cc: clang-18, runs-on: ubuntu-26.04 }
+          - { cc: clang-17, runs-on: ubuntu-26.04 }
           - { cc: clang-16, runs-on: ubuntu-24.04 }
           - { cc: clang-15, runs-on: ubuntu-24.04 }
           - { cc: clang-14, runs-on: ubuntu-24.04 }
